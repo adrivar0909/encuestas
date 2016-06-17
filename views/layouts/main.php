@@ -27,7 +27,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        'brandLabel' => 'Encuestas.com',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -36,12 +36,15 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Inicio', 'url' => ['/site/index']],
+            ['label' => 'Registrarse', 'url' => ['/cliente/create']],
+            ['label' => 'Tarifas', 'url' => ['/suscripcion/index']],            
+            ['label' => 'Sobre Nosotros', 'url' => ['/site/about']],
+            ['label' => 'Contactanos', 'url' => ['/site/contact']],         
+            
             Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login'],
-                ['label' => 'Cliente', 'url' => ['/suscripcion/index']],]
+                ['label' => 'Login', 'url' => ['/site/login']]                    
+                    
             ) : (
                 '<li>'
                 . Html::beginForm(['/site/logout'], 'post', ['class' => 'navbar-form'])
@@ -50,8 +53,9 @@ AppAsset::register($this);
                     ['class' => 'btn btn-link']
                 )
                 . Html::endForm()
-                . '</li>'
+                . '</li>'                    
             )
+            
         ],
     ]);
     NavBar::end();

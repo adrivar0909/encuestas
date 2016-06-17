@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\SuscripcionSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Suscripcions';
+$this->title = 'Tarifa Suscripciones';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="suscripcion-index">
