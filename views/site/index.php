@@ -11,7 +11,7 @@ $this->title = 'Encuestas.Com';
 
         <p class="lead">Crea, distribuye y analiza tus encuestas y cuestionarios rápidamente.</p>
 
-        <p><a class="btn btn-lg btn-success" href="http://encuestas.com/index.php?r=cliente%2Fcreate">Crear una Cuenta</a></p>
+        <p><a class="btn btn-lg btn-success" href="http://localhost/encuestas/web/index.php?r=cliente%2Fcreate">Crear una Cuenta</a></p>
     </div>
 
     <div class="body-content">
