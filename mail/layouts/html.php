@@ -14,6 +14,7 @@ use yii\helpers\Html;
     <?php $this->head() ?>
 </head>
 <body>
+	<!-- Esta linea es de comentario -->
     <?php $this->beginBody() ?>
     <?= $content ?>
     <?php $this->endBody() ?>
